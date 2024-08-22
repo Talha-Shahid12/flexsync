@@ -1,5 +1,5 @@
 body {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,22 +11,18 @@ body {
   min-height: 100vh;
 }
 
-
-
 .uniInfo h2 {
-  background-color: rgb(4, 134, 255);
+  background-color: #3F51B5;
   font-size: medium;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   color: white;
   display: flex;
   align-items: center;
-  /* Center align items vertically */
 }
 
 .uniInfo h2 img {
   margin-right: 10px;
-  /* Space between image and text */
 }
 
 .uniInfo h2 .h2 {
@@ -36,9 +32,7 @@ body {
 .row {
   display: flex;
   justify-content: flex-start;
-  /* Align items to the start */
   align-items: center;
-  /* margin-bottom: 10px; */
 }
 
 .column {
@@ -46,10 +40,10 @@ body {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  padding: 10px;
-
+  /* padding: 2px; */
+  margin-left: 10px;
+  margin-bottom: 0%;
 }
-
 
 .inline {
   margin-left: 10px;
@@ -58,13 +52,95 @@ body {
 }
 
 .container {
+  margin: 0%;
   display: flex;
+  padding: 50px;
+  padding-top: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+
+  font-weight: normal;
   flex-direction: column;
-  border: 2px solid rgb(4, 134, 255);
-  width: 900px;
+  border: 1px solid #3F51B5;
+  width: 1050px;
   height: auto;
 }
 
 .space-bottom {
   margin-bottom: 20px;
+}
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  /* Full width */
+  height: 80px;
+  /* Adjust height as needed */
+  background-color: #355C7D;
+  color: white;
+  display: flex;
+  justify-content: right;
+  /* Space out elements */
+  align-items: center;
+  position: fixed;
+  /* Stay at the top */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* Ensure it is on top of other elements */
+}
+
+/* Sidebar styling */
+.appbar {
+  flex-direction: column;
+  width: 150px;
+  min-height: 100vh;
+  background-color: #2A363B;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 60px;
+  /* Adjust position below the navbar */
+  left: 0;
+  overflow-y: auto;
+  padding-top: 20px;
+  margin: 0%;
+}
+
+/* Main content to account for both navbar and sidebar */
+.main-content {
+  margin-left: 200px;
+  /* Leave space for the sidebar */
+  margin-top: 60px;
+  /* Leave space for the navbar */
+  padding: 20px;
+  flex: 1;
+}
+
+
+
+.iconcontainer{
+  padding: 20px;
+}
+.para{
+  color: black;
+}
+
+.imageContainer {
+  width: 60px;
+  /* Set the width */
+  height: 70px;
+  /* Set the height */
+  border-radius: 50%;
+  /* Makes it a circle */
+  background-color: #8da5b9;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  display: flex;
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Center content vertically */
 }
